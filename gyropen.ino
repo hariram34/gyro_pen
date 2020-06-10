@@ -1,10 +1,4 @@
-/* Code to control the mouse pointer
- * through the movement of the head
- * Change values at vx and vy (+300 and -100 in my case)
- * using the TEST code to make your project work.
- * 
- * Gabry295
- */
+
 
 #include <Wire.h>
 #include <I2Cdev.h>
@@ -27,8 +21,6 @@ void setup() {
 void loop() {
   mpu.getMotion6(&ax, &ay, &az, &gx, &gy, &gz);
 
- // vx = (gx+300)/200;  // "+300" because the x axis of gyroscope give values about -350 while it's not moving. Change this value if you get something different using the TEST code, chacking if there are values far from zero.
- // vy = -(gz-100)/200; // same here about "-100"
  Serial.println("a/g:\t");
  Serial.print(ax); Serial.print("\t");
  Serial.print(ay); Serial.print("\t");
