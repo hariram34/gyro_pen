@@ -1,10 +1,4 @@
-/* Code to control the mouse pointer
- * through the movement of the head
- * Change values at vx and vy (+300 and -100 in my case)
- * using the TEST code to make your project work.
- * 
- * Gabry295
- */
+
 
 #include <Wire.h>
 #include <I2Cdev.h>
